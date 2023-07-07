@@ -1,0 +1,1438 @@
+/* подключение шрифтов */
+@font-face {
+  font-family: 'Palatino Linotype';
+  font-style: normal;
+  font-variant: normal;
+  src: local('Palatino Linotype'),
+        url('/fonts/palatinolinotype_roman.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Palatino Linotype';
+  font-style: foobar;
+  font-variant: normal;
+  src: local('Palatino Linotype'),
+        url('/fonts/palatinolinotype_italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Palatino Linotype';
+  font-variant: foobar;
+  font-variant: bold;
+  src: local('Palatino Linotype'),
+        url('/fonts/palatinolinotype_bolditalic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Palatino Linotype';
+  font-style: normal;
+  font-variant: bold;
+  src: local('Palatino Linotype'),
+        url('/fonts/palatinolinotype_bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gotham Pro'),
+        url('/fonts/gothampro.ttf') format('ttf');
+}
+
+/* настройка стилей */
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+
+  h3,
+  .animals_form_button,
+  .help_form_button {
+    font-family: 'Palatino Linotype';
+    font-style: normal;
+    font-variant: bold;
+  }
+
+  p {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  header {
+    font-size: 16px;
+    background: #FEDC50;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: #7E9C2A 2px solid;
+  }
+
+  .header_text {
+    margin: 20px;
+    margin-left: 150px;
+  }
+
+  .performance {
+    background: url(/image/1613054385_98-p-risunki-na-rizhem-fone-139.png) no-repeat center center;
+    background-size: cover;
+    min-height: 100%
+  }
+
+  .perfomans_text_one {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+    margin-left: 20%;
+    padding-top: 10%;
+  }
+
+  .perfomans_text_two {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 42px;
+    margin-left: 36%;
+    margin-top: 2%;
+  }
+
+  .header_button {
+    font-size: 16px;
+    background: #FEDC50;
+    padding: 10px 10px;
+    margin-top: 10px;
+    width: 150px;
+    border: #7E9C2A 2px solid;
+  }
+
+  .contact_img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact {
+    margin: 10px;
+  }
+
+  .header_button:hover {
+    background: #7E9C2A;
+    transition: 0.7s;
+  }
+
+  .performance_button_one {
+    font-size: 17px;
+    background: #7E9C2A;
+    padding: 15px;
+    margin: 20px;
+    width: 300px;
+    margin-left: 20%;
+    border: #FEDC50 3px solid;
+  }
+
+  .performance_button_two {
+    font-size: 17px;
+    background: #7E9C2A;
+    padding: 15px;
+    margin: 5px;
+    width: 300px;
+    margin-left: 20%;
+    border: #FEDC50 3px solid;
+    margin-bottom: 550px;
+  }
+
+  .contact_img:hover,
+  .performance_button_one:hover,
+  .performance_button_two:hover,
+  .ikon:hover,
+  .ikon_up:hover {
+    transform: scale(1.1);
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .about_text {
+    font-size: 24px;
+    line-height: 2.5;
+    margin: 35px;
+  }
+
+  .about_img {
+    height: 310px;
+    width: 558px;
+    margin: 10px;
+    box-shadow: 0 0 10px 7px grey;
+    clip-path: inset(0px -15px -15px 0px);
+  }
+
+  .animals {
+    background: #7E9C2A;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+  }
+
+  .animals_img {
+    height: 400px;
+    width: 600px;
+    box-shadow: 0 0 10px 7px grey;
+    clip-path: inset(0px -15px -15px 0px);
+  }
+
+  .animals_h {
+    font-size: 36px;
+  }
+
+  .animals_p {
+    font-size: 20px;
+    margin: 15px;
+  }
+
+  .animals_form {
+    height: 700px;
+    width: 550px;
+    border: grey 2px solid;
+    background: white;
+    margin: 100px;
+    padding: 30px;
+    box-shadow: 0 0 10px 7px grey;
+    clip-path: inset(0px -15px -15px 0px);
+  }
+
+  .animals_form_h {
+    margin-left: 27px;
+    font-size: 36px;
+  }
+
+  .animals_form_input {
+    font-size: 26px;
+    border: none;
+    border-bottom: grey 4px solid;
+    margin: 30px;
+    padding: 10px;
+    width: 470px;
+  }
+
+  .animals_form_button {
+    font-size: 28px;
+    border: grey 4px solid;
+    background: #FEDC50;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+  }
+
+  .inspection {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+  }
+
+  .inspection_text {
+    margin: 50px;
+  }
+
+  .inspection_text_h_k,
+  .inspection_text_h_v,
+  .inspection_text_h {
+    font-size: 32px;
+    margin: 15px;
+  }
+
+  .inspection_text_h_k {
+    margin-top: 45px;
+  }
+
+  .inspection_text_p {
+    font-size: 24px;
+  }
+
+  .inspection_img {
+    width: 370px;
+    height: 529px;
+    box-shadow: 0 0 10px 7px grey;
+    clip-path: inset(0px -15px -15px 0px);
+  }
+
+  .help {
+    background: #7E9C2A;
+    padding: 25px;
+  }
+
+  .help_text_h {
+    font-size: 40px;
+    padding: 120px;
+  }
+
+  .help_text_p {
+    font-size: 36px;
+    margin-top: 50px;
+    padding: 120px;
+  }
+
+  .helps_three_p {
+    padding: 120px;
+  }
+
+  .help_img_one,
+  .help_img_two,
+  .help_img_three {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .helps {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border: grey 2px solid;
+    width: 800px;
+    height: 250px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 0 10px 7px grey;
+    clip-path: inset(0px -15px -15px 0px);
+  }
+
+  .helps_three {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border: grey 2px solid;
+    width: 800px;
+    height: 250px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 0 10px 7px grey;
+    clip-path: inset(0px -15px -15px 0px);
+  }
+
+  .helps_h {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .helps_p {
+    font-size: 28px;
+  }
+
+  .help_img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .help_label {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .helps_three_p {
+    font-size: 32px;
+  }
+
+  .reviews {
+    width:1900px;
+    height: 400px;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .reviews_block {
+    margin: 30px;
+    padding: 30px;
+    min-width: 450px;
+    max-height: 300px;
+    white-space: nowrap;
+    border: grey 2px solid;
+    background: white;
+    box-shadow: 0 0 10px 7px grey;
+    clip-path: inset(0px -15px -15px 0px);
+  }
+
+  .reviews_h {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .reviews_p {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  footer {
+    background: #7E9C2A;
+    border: #FEDC50 2px solid;
+    padding: 25px;
+  }
+
+  .footer_all {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+  }
+
+  .contacts_p,
+  .operating_mode_h,
+  .operating_mode_p,
+  .socials_p {
+    font-size: 26px;
+  }
+
+  .ikon {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    padding: 10px;
+    margin-right: -10px;
+  }
+
+  .ikon_up {
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+  }
+
+  .copyrate {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+
+
+
+
+
+  /* адаптация */
+  @media screen and (min-width:1301px) and (max-width: 1500px) {
+    
+    header {
+      font-size: 14px;
+    }
+
+    .header_text {
+      margin: 17px;
+    }
+
+    .header_button {
+      padding: 8px;
+    }
+
+    .perfomans_text_two {
+      margin-left: 42%;
+    }
+
+    .about_text {
+      font-size: 18px;
+    }
+
+    .inspection_img {
+      margin: 25px;
+    }
+
+    .inspection_text_h,
+    .inspection_text_h_k,
+    .inspection_text_h_v {
+      font-size: 22px;
+    }
+
+    .inspection_text_h_v {
+      margin-top: 48px;
+    }
+
+    .inspection_text_p {
+      font-size: 22px;
+    }
+
+    .helps_h,
+    .helps_p {
+      font-size: 22px;
+    }
+
+  }
+
+  @media screen and (min-width:1186px) and (max-width: 1300px) {
+
+    header {
+      font-size: 12px;
+    }
+
+    .header_text {
+      font-size: 12px;
+      margin: 17px;
+    }
+
+    .header_button {
+      font-size: 12px;
+      padding: 8px;
+      width: 110px;
+    }
+
+    .perfomans_text_one {
+      font-size: 60px;
+    }
+
+    .perfomans_text_two {
+      font-size: 48px;
+      margin-left: 37%;
+    }
+
+    .performance_button_one,
+    .performance_button_two {
+      font-size: 16px;
+      width: 230px;
+    }
+
+    .about_text {
+      font-size: 16px;
+    }
+
+    .animals_img {
+      max-height: 300px;
+      max-width: 500px;
+      margin-left: 55px;
+    }
+  
+    .animals_h {
+      font-size: 30px;
+      margin-left: 55px;
+    }
+  
+    .animals_p {
+      font-size: 18px;
+      margin-left: 55px;
+    }
+
+    .animals_form {
+      height: 600px;
+      width: 550px;
+      margin-top: 55px;
+    }
+  
+    .animals_form_h {
+      font-size: 32px;
+    }
+  
+    .animals_form_input {
+      font-size: 22px;
+      width: 370px;
+    }
+  
+    .animals_form_button {
+      font-size: 26px;
+      width: 200px;
+    }
+
+    .inspection_img {
+      margin: 15px;
+      margin-top: 80px;
+      max-height: 350px;
+      max-width: 500px;
+    }
+
+    .inspection_text_h,
+    .inspection_text_h_k,
+    .inspection_text_h_v {
+      font-size: 20px;
+    }
+
+    .inspection_text_h_v {
+      margin-top: 48px;
+    }
+
+    .inspection_text_p {
+      font-size: 20px;
+    }
+
+    .helps_h,
+    .helps_p {
+      font-size: 22px;
+    }
+
+     .help_text_h {
+        font-size: 34px;
+     }
+
+     .help_text_p,
+     .helps_three_p {
+        font-size: 30px;
+     }
+
+     .helps_three {
+      margin-top: 55px;
+     }
+
+     .contacts_p,
+     .operating_mode_h,
+     .operating_mode_p,
+     .copyrate {
+      font-size: 24px;
+     }
+
+    }
+
+    @media screen and (min-width:1001px) and (max-width: 1185px) {
+
+      header {
+        font-size: 12px;
+      }
+  
+      .header_text {
+        font-size: 12px;
+        margin: 17px;
+      }
+  
+      .header_button {
+        font-size: 12px;
+        padding: 8px;
+        width: 110px;
+      }
+
+      .perfomans_text_one {
+        font-size: 56px;
+      }
+  
+      .perfomans_text_two {
+        font-size: 46px;
+        margin-left: 37%;
+      }
+  
+      .performance_button_one,
+      .performance_button_two {
+        font-size: 16px;
+        width: 230px;
+      }
+
+      .about_text {
+        font-size: 16px;
+      }
+  
+      .animals_img {
+        max-height: 300px;
+        max-width: 500px;
+        margin-left: 100px;
+      }
+    
+      .animals_h {
+        font-size: 30px;
+        margin-left: 100px;
+      }
+    
+      .animals_p {
+        font-size: 18px;
+        margin-left: 100px;
+      }
+  
+      .animals_form {
+        height: 600px;
+        width: 550px;
+        margin-top: 55px;
+      }
+    
+      .animals_form_h {
+        font-size: 32px;
+      }
+    
+      .animals_form_input {
+        font-size: 22px;
+        width: 370px;
+      }
+    
+      .animals_form_button {
+        font-size: 26px;
+        width: 200px;
+      }
+  
+      .inspection_img {
+        margin: 15px;
+        margin-top: 80px;
+        max-height: 350px;
+        max-width: 500px;
+      }
+  
+      .inspection_text_h,
+      .inspection_text_h_k,
+      .inspection_text_h_v {
+        font-size: 18px;
+      }
+
+      .inspection_text_h_k {
+        margin-top: 50px;
+      }
+  
+      .inspection_text_h_v {
+        margin-top: 48px;
+      }
+  
+      .inspection_text_p {
+        font-size: 18px;
+      }
+  
+      .helps_h,
+      .helps_p {
+        font-size: 20px;
+      }
+  
+       .help_text_h {
+          font-size: 24px;
+       }
+  
+       .help_text_p,
+       .helps_three_p {
+          font-size: 20px;
+       }
+  
+       .helps_three {
+        margin-top: 55px;
+       }
+  
+       .contacts_p,
+       .operating_mode_h,
+       .operating_mode_p,
+       .copyrate,
+       .socials_p {
+        font-size: 18px;
+       }
+
+    }
+
+    @media screen and (min-width:781px) and (max-width: 1000px) {
+
+      header {
+        font-size: 10px;
+      }
+  
+      .header_text {
+        font-size: 10px;
+        margin: 20px;
+      }
+  
+      .header_button {
+        font-size: 10px;
+        padding: 8px;
+        width: 90px;
+      }
+
+      .contact_img {
+        height: 20px;
+        width: 20px;
+        margin-top: 2px;
+      }
+  
+      .perfomans_text_one {
+        font-size: 48px;
+      }
+  
+      .perfomans_text_two {
+        font-size: 32px;
+        margin-left: 45%;
+      }
+  
+      .performance_button_one,
+      .performance_button_two {
+        font-size: 12px;
+        width: 200px;
+      }
+
+      .about_img {
+        height: 250px;
+        width: 350px;
+        margin-top: 50px;
+      }
+
+      .about_text {
+        font-size: 16px;
+      }
+  
+      .animals_img {
+        max-height: 220px;
+        max-width: 350px;
+        margin-left: 100px;
+      }
+    
+      .animals_h {
+        font-size: 24px;
+        margin-top: 70px;
+        margin-left: 100px;
+      }
+    
+      .animals_p {
+        font-size: 14px;
+        margin-left: 100px;
+      }
+  
+      .animals_form {
+        height: 550px;
+        width: 450px;
+        margin-top: 55px;
+      }
+    
+      .animals_form_h {
+        font-size: 26px;
+      }
+    
+      .animals_form_input {
+        font-size: 20px;
+        width: 270px;
+      }
+    
+      .animals_form_button {
+        margin-left: 20px;
+        font-size: 22px;
+        width: 140px;
+      }
+  
+      .inspection_img {
+        margin: 15px;
+        margin-top: 100px;
+        max-height: 350px;
+        max-width: 500px;
+      }
+  
+      .inspection_text_h,
+      .inspection_text_h_k,
+      .inspection_text_h_v {
+        font-size: 18px;
+      }
+
+      .inspection_text_h_k {
+        margin-top: 50px;
+      }
+  
+      .inspection_text_h_v {
+        margin-top: 48px;
+      }
+  
+      .inspection_text_p {
+        font-size: 18px;
+      }
+  
+      .helps_h,
+      .helps_p {
+        font-size: 18px;
+      }
+  
+       .help_text_h {
+          font-size: 20px;
+       }
+  
+       .help_text_p,
+       .helps_three_p {
+          font-size: 16px;
+       }
+  
+       .helps_three {
+        margin-top: 55px;
+       }
+
+      ::-webkit-scrollbar{width:10px;height:10px;}
+      ::-webkit-scrollbar-button{width:10px;height:10px;}
+
+       .reviews_block {
+        height: 250px;
+        width: 250px;
+       }
+
+       .reviews_h,
+       .reviews_p {
+        margin-top: 50px;
+        font-size: 18px;
+       }
+  
+       .contacts_p,
+       .operating_mode_h,
+       .operating_mode_p,
+       .copyrate,
+       .socials_p {
+        font-size: 16px;
+       }
+
+       .ikon {
+        width: 20px;
+        height: 20px;
+       }
+
+       .ikon_up {
+        width: 45px;
+        height: 45px;
+       }
+
+    }
+
+    @media screen and (min-width:571px) and (max-width: 780px) {
+
+      header {
+        font-size: 8px;
+      }
+  
+      .header_text {
+        font-size: 8px;
+        margin: 15px;
+      }
+  
+      .header_button {
+        font-size: 8px;
+        padding: 5px;
+        width: 70px;
+      }
+
+      .contact_img {
+        height: 15px;
+        width: 15px;
+        margin-top: 2px;
+      }
+  
+      .perfomans_text_one {
+        font-size: 34px;
+      }
+  
+      .perfomans_text_two {
+        font-size: 22px;
+        margin-left: 43%;
+      }
+  
+      .performance_button_one,
+      .performance_button_two {
+        font-size: 8px;
+        width: 130px;
+        padding: 10px;
+        margin: 10px;
+        margin-left: 170px;
+      }
+
+      .about_img {
+        height: 150px;
+        width: 250px;
+        margin-top: 20px;
+      }
+
+      .about_text {
+        font-size: 9px;
+      }
+  
+      .animals {
+        padding: 5px;
+      }
+
+      .animals_img {
+        max-height: 150px;
+        max-width: 200px;
+      }
+    
+      .animals_h {
+        font-size: 16px;
+      }
+    
+      .animals_p {
+        font-size: 10px;
+      }
+  
+      .animals_form {
+        height: 400px;
+        width: 400px;
+      }
+    
+      .animals_form_h {
+        font-size: 20px;
+      }
+    
+      .animals_form_input {
+        font-size: 16px;
+        margin: 15px;
+        width: 270px;
+      }
+    
+      .animals_form_button {
+        font-size: 16px;
+        width: 120px;
+        margin: 15px;
+      }
+  
+      .inspection_img {
+        margin: 10px;
+        margin-top: 100px;
+        max-height: 350px;
+        max-width: 500px;
+      }
+  
+      .inspection_text_h,
+      .inspection_text_h_k,
+      .inspection_text_h_v {
+        font-size: 14px;
+      }
+
+      .inspection_text_h_k,
+      .inspection_text_h_v {
+        margin-top: 50px;
+      }
+  
+      .inspection_text_p {
+        font-size: 14px;
+      }
+
+      .helps,
+      .helps_three {
+        width: 700px;
+        height: 200px;
+      }
+  
+      .helps_h,
+      .helps_p {
+        font-size: 12px;
+      }
+  
+       .help_text_h {
+          font-size: 12px;
+       }
+  
+       .help_text_p,
+       .helps_three_p {
+          font-size: 12px;
+       }
+  
+       .helps_three {
+        margin-top: 55px;
+       }
+
+       .help_img {
+        height: 150px;
+        width: 150px;
+        margin-top: 15px;
+       }
+
+      ::-webkit-scrollbar{width:10px;height:10px;}
+      ::-webkit-scrollbar-button{width:10px;height:10px;}
+
+       .reviews_block {
+        height: 250px;
+        width: 250px;
+       }
+
+       .reviews_h,
+       .reviews_p {
+        margin-top: 50px;
+        font-size: 18px;
+       }
+  
+       .contacts_p,
+       .operating_mode_h,
+       .operating_mode_p,
+       .copyrate,
+       .socials_p {
+        font-size: 12px;
+       }
+
+       .socials_p {
+        margin-left: 25px;
+       }
+
+       .ikon {
+        width: 20px;
+        height: 20px;
+       }
+
+       .ikon_up {
+        width: 40px;
+        height: 40px;
+       }
+
+    }
+
+    @media screen and (min-width:481px) and (max-width: 570px) {
+
+      header {
+        font-size: 5px;
+      }
+  
+      .header_text {
+        font-size: 5px;
+        margin: 15px;
+      }
+  
+      .header_button {
+        font-size: 6px;
+        padding: 2px;
+        width: 50px;
+      }
+
+      .contact_img {
+        height: 15px;
+        width: 15px;
+        margin-top: 2px;
+      }
+
+      .perfomans_text_one {
+        font-size: 22px;
+      }
+  
+      .perfomans_text_two {
+        font-size: 16px;
+        margin-left: 37%;
+      }
+  
+      .performance_button_one,
+      .performance_button_two {
+        font-size: 7px;
+        width: 105px;
+        padding: 3px;
+        margin: 3px;
+        margin-left: 110px;
+      }
+
+      .about {
+        padding: 10px;
+      }
+
+      .about_img {
+        height: 80px;
+        width: 120px;
+      }
+
+      .about_text {
+        font-size: 7px;
+        margin-top: 22px;
+      }
+  
+      .animals {
+        padding: 5px;
+      }
+
+      .animals_img {
+        max-height: 100px;
+        max-width: 150px;
+      }
+    
+      .animals_h {
+        font-size: 12px;
+      }
+    
+      .animals_p {
+        font-size: 8px;
+      }
+  
+      .animals_form {
+        height: 320px;
+        width: 300px;
+      }
+    
+      .animals_form_h {
+        font-size: 14px;
+      }
+    
+      .animals_form_input {
+        font-size: 10px;
+        margin: 15px;
+        width: 170px;
+      }
+    
+      .animals_form_button {
+        font-size: 12px;
+        width: 90px;
+        margin: 5px;
+        margin-left: 10px;
+      }
+  
+      .inspection_img {
+        margin: 10px;
+        margin-top: 15px;
+        max-height: 300px;
+        max-width: 200px;
+      }
+  
+      .inspection_text {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .inspection_text_h,
+      .inspection_text_h_k,
+      .inspection_text_h_v {
+        font-size: 9px;
+      }
+
+      .inspection_text_h_k {
+        margin-top: 10px;
+      }
+  
+      .inspection_text_h_v {
+        margin-top: 20px;
+      }
+
+      .inspection_text_p {
+        font-size: 9px;
+      }
+
+      .help_img_one,
+      .help_img_two,
+      .help_img_three {
+        display: inline-block;
+      }
+
+      .helps,
+      .helps_three {
+        width: 400px;
+        height: 150px;
+      }
+  
+      .helps_h,
+      .helps_p {
+        font-size: 14px;
+      }
+  
+       .help_text_h {
+          font-size: 14px;
+          padding: 30px;
+       }
+  
+       .help_text_p,
+       .helps_three_p {
+          font-size: 14px;
+          padding: 30px;
+       }
+
+       .help_img {
+        height: 100px;
+        width: 100px;
+       }
+
+      ::-webkit-scrollbar{width:10px;height:10px;}
+      ::-webkit-scrollbar-button{width:10px;height:10px;}
+
+       .reviews_block {
+        height: 250px;
+        width: 250px;
+       }
+
+       .reviews_h,
+       .reviews_p {
+        margin-top: 50px;
+        font-size: 18px;
+       }
+  
+       .contacts_p,
+       .operating_mode_h,
+       .operating_mode_p,
+       .copyrate,
+       .socials_p {
+        font-size: 8px;
+       }
+
+       .socials_p {
+        margin-left: 25px;
+       }
+
+       .ikon {
+        width: 8px;
+        height: 8px;
+       }
+
+       .ikon_up {
+        width: 30px;
+        height: 40px;
+       }
+
+    }
+
+    @media screen and (min-width:320px) and (max-width: 480px) {
+      
+      header {
+        font-size: 5px;
+      }
+  
+      .header_text,
+      .contact,
+      .contact_img {
+        display: none;
+      }
+  
+      .header_button {
+        font-size: 5px;
+        padding: 2px;
+        width: 45px;
+      }
+  
+      .perfomans_text_one {
+        font-size: 14px;
+      }
+  
+      .perfomans_text_two {
+        font-size: 10px;
+        margin-left: 38%;
+      }
+  
+      .performance_button_one,
+      .performance_button_two {
+        font-size: 5px;
+        width: 80px;
+        padding: 2px;
+        margin: 2px;
+        margin-left: 70px;
+      }
+
+      .about {
+        padding: 10px;
+        display: inline-block;
+      }
+
+      .about_img {
+        height: 100px;
+        width: 150px;
+        margin-left: 28%;
+      }
+
+      .about_text {
+        font-size: 7px;
+        margin-top: 22px;
+      }
+
+      .animals_img,
+      .animals_h,
+      .animals_p {
+        display: none;
+      }
+  
+      .animals_form {
+        padding: 10px;
+        height: 270px;
+        width: 170px;
+      }
+    
+      .animals_form_h {
+        font-size: 10px;
+      }
+    
+      .animals_form_input {
+        font-size: 8px;
+        margin: 12px;
+        width: 100px;
+      }
+    
+      .animals_form_button {
+        padding: 2px;
+        font-size: 10px;
+        width: 62px;
+        margin: 1px;
+        margin-left: 5px;
+      }
+
+      .inspection {
+        display: inline-block;
+      }
+  
+      .inspection_img {
+        margin: 10px;
+        margin-top: 15px;
+        max-height: 300px;
+        max-width: 200px;
+      }
+  
+      .inspection_text {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .inspection_text_h,
+      .inspection_text_h_k,
+      .inspection_text_h_v {
+        font-size: 9px;
+      }
+
+      .inspection_text_h_k {
+        margin-top: 10px;
+      }
+  
+      .inspection_text_h_v {
+        margin-top: 20px;
+      }
+
+      .inspection_text_p {
+        font-size: 9px;
+      }
+
+      .help_img_one,
+      .help_img_two,
+      .help_img_three {
+        display: inline-block;
+      }
+
+      .helps,
+      .helps_three {
+        width: 190px;
+        height: 140px;
+      }
+  
+      .helps_h,
+      .helps_p {
+        margin: 2px;
+        font-size: 10px;
+      }
+  
+       .help_text_h {
+          font-size: 10px;
+          padding: 15px;
+       }
+  
+       .help_text_p,
+       .helps_three_p {
+          font-size: 10px;
+          padding: 15px;
+       }
+
+       .help_img {
+        padding-top: 35px;
+        height: 50px;
+        width: 50px;
+       }
+
+      ::-webkit-scrollbar{width:10px;height:10px;}
+      ::-webkit-scrollbar-button{width:10px;height:10px;}
+
+       .reviews_block {
+        height: 250px;
+        width: 250px;
+       }
+
+       .reviews_h,
+       .reviews_p {
+        margin-top: 50px;
+        font-size: 18px;
+       }
+
+       .footer_all {
+        display: inline-block;
+       }
+  
+       .contacts_p,
+       .operating_mode_h,
+       .operating_mode_p,
+       .copyrate,
+       .socials_p {
+        font-size: 8px;
+       }
+
+       .socials_p {
+        margin-left: 25px;
+       }
+
+       .ikon {
+        width: 8px;
+        height: 8px;
+       }
+
+       .ikon_up {
+        width: 30px;
+        height: 40px;
+       }
+
+      .help,
+      footer {
+        text-align: center;
+      }
+
+    }
